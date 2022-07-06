@@ -21,7 +21,7 @@ function showTemperature(response) {
   let city = response.data.name;
   let cityElement = document.querySelector("#city");
   cityElement.innerHTML = `${city}`;
-  let description = response.data.weather.[0].description;
+  let description = response.data.weather.description;
   let descriptionElement = document.querySelector("#temperature-description");
 descriptionElement.innerHTML = `${description}`
   let temperature = Math.round(response.data.main.temp);
